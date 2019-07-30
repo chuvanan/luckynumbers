@@ -11,6 +11,10 @@
 ##' @export
 load_numbers <- function(n_digit) {
 
+    if (n_digit < 3 || n_digit > 7) {
+        stop("`n_digit` supported only values in range of [3,7]", call. = FALSE)
+    }
+
     if (n_digit == 3) {
         all_nums <- read_fst(system.file("extdata", "three_digits.fst", package = "luckynumbers"))
     }
