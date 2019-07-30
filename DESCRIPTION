@@ -1,0 +1,15 @@
+Package: luckynumbers
+Title: Lucky Number Generator
+Version: 0.1.1
+Author: An Chu <chuvanan.cva@gmail.com>
+Maintainer: An Chu <chuvanan.cva@gamil.com>
+Description: Functions to generate lucky (pattern-based) numbers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Imports:
+  data.table,
+  fst
+Suggests: tinytest
