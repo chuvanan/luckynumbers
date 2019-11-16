@@ -12,27 +12,27 @@
 load_numbers <- function(n_digit) {
 
     if (n_digit < 3 || n_digit > 7) {
-        stop("`n_digit` supported only values in range of [3,7]", call. = FALSE)
+        stop("`n_digit` supported only integer values in range of [3,7]", call. = FALSE)
     }
 
     if (n_digit == 3) {
-        all_nums <- read_fst(system.file("extdata", "three_digits.fst", package = "luckynumbers"))
+        all_nums <- fst::read_fst(system.file("extdata", "three_digits.fst", package = "luckynumbers"))
     }
 
     if (n_digit == 4) {
-        all_nums <- read_fst(system.file("extdata", "four_digits.fst", package = "luckynumbers"))
+        all_nums <- fst::read_fst(system.file("extdata", "four_digits.fst", package = "luckynumbers"))
     }
 
     if (n_digit == 5) {
-        all_nums <- read_fst(system.file("extdata", "five_digits.fst", package = "luckynumbers"))
+        all_nums <- fst::read_fst(system.file("extdata", "five_digits.fst", package = "luckynumbers"))
     }
 
     if (n_digit == 6) {
-        all_nums <- read_fst(system.file("extdata", "six_digits.fst", package = "luckynumbers"))
+        all_nums <- fst::read_fst(system.file("extdata", "six_digits.fst", package = "luckynumbers"))
     }
 
     if (n_digit == 7) {
-        all_nums <- read_fst(system.file("extdata", "seven_digits.fst", package = "luckynumbers"))
+        all_nums <- fst::read_fst(system.file("extdata", "seven_digits.fst", package = "luckynumbers"))
     }
 
     all_nums
